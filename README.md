@@ -42,3 +42,14 @@ const startup = 'startup';
 
 console.log(startup);
 ```
+
+2. Что выведет этот код?
+   * Исправьте код, чтобы он выводил каждое новое число спустя 1 секунду после предыдущего
+```typescript
+var i = 0;
+for (i = 0; i < 10; i++) {
+  setTimeout(function () {
+    console.log(i);
+  }, 1000);
+}
+```
