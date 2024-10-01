@@ -53,3 +53,34 @@ for (i = 0; i < 10; i++) {
   }, 1000);
 }
 ```
+
+3. Напишите функцию, которая принимает на вход арабское число, а возвращает римское
+```typescript
+const convert = (num: number): string => {
+  const data = [
+    { arab: 1000, rome: 'M' },
+    { arab: 900, rome: 'CM' },
+    { arab: 500, rome: 'D' },
+    { arab: 400, rome: 'CD' },
+    { arab: 100, rome: 'C' },
+    { arab: 90, rome: 'XC' },
+    { arab: 50, rome: 'XL' },
+    { arab: 40, rome: 'L' },
+    { arab: 10, rome: 'X' },
+    { arab: 9, rome: 'IX' },
+    { arab: 5, rome: 'V' },
+    { arab: 4, rome: 'IV' },
+    { arab: 1, rome: 'I' },
+  ];
+
+  for (const { arab, rome } of data) {
+    if (num >= arab) {
+      return rome + convert(num - arab);
+    }
+  }
+
+  return '';
+};
+
+console.log(convert(2024)); // MMXXIV
+```
