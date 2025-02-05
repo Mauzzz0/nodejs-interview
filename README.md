@@ -1,11 +1,25 @@
 ### Содержание
-1. [Git](#Git)
-2. [Node.JS](#NodeJS)
-3. [JavaScript](#JavaScript)
-4. [TypeScript](#TypeScript)
-5. [Nest.JS](#NestJS)
-6. [PostgreSQL](#PostgreSQL)
+1. [Computer Science](#computer-science)
+2. [Git](#Git)
+3. [Node.JS](#NodeJS)
+4. [JavaScript](#JavaScript)
+5. [TypeScript](#TypeScript)
+6. [Nest.JS](#NestJS)
+7. [PostgreSQL](#PostgreSQL)
 
+---
+# Computer Science
+Общий список ситуативных вопросов по теме **Computer Science**.  
+Вполне нормально, что кандидат может не знать часть.
+* Что такое **DNS**?
+* В чём отличие **TCP** и **UDP** протокола? С помощью какого из них работает **HTTP**?
+* Что такое модель **OSI**? Какие уровни можете назвать?
+* Какие структуры данных вы знаете?
+* В чём отличие стека и очереди?
+* Что такое **Big O-notation** в контексте алгоритмов?
+* Что такое отладка? Как отлаживать Node.js приложение?
+* В чем отличие **авторизации** от **аутентификации**?
+* Что такое **регулярные выражения**?
 
 ---
 
@@ -41,6 +55,8 @@
 * Что такое макро и микро задачи?
 * Что такое **EventLoop**?
 * Как обновить одну зависимость? Как обновить несколько (или все) зависимости?
+* Как можно обнаружить утечку памяти в Node.JS? Какой инструмент дебага пригодится?
+* Что такое **Stream**? В каких случаях используются стримы?
 
 ---
 
@@ -195,6 +211,43 @@ console.log(d);
 ```
 
 ---
+Что выведет код?
+```javascript
+const object = {};
+
+object['1'] = 'Hello';
+object[1] = 'World!';
+
+object[{}] = 'My';
+object[[1]] = 'name';
+object[[1, 2]] = 'is';
+object[[{}]] = 'Ruslan';
+
+object[new Date()] = 'good';
+object[true] = 'luck,';
+object[null] = 'man!';
+
+console.log(object);
+```
+
+---
+Что выведет код?
+```typescript
+class A {}
+type B = {};
+const b: B = {};
+const c = () => {};
+
+console.log(typeof {});
+console.log(typeof []);
+console.log(typeof new A());
+console.log(typeof {});
+console.log(typeof c);
+console.log(typeof null);
+
+```
+
+---
 
 Что выведет код?
 ```javascript
@@ -224,7 +277,7 @@ console.log(i);
 * Какой протокол используется для передачи данных в Backend?
 * В чем глобальное отличие **HTTP** от **WebSockets**? Когда лучше использовать **WebSockets**?
 * Что такое **health-check**?
-* В чем отличие **авторизации** от **аутентификации**?
+* Что такое декоратор?
 
 ---
 
@@ -245,6 +298,44 @@ const values = [1, -1, 0, 2, -2, 3, -3, 4, -4, 5, -5];
 const secondMaxValue = find2ndMaxValue(values); // 4
 
 find2ndMaxValue([0, 1, 1, 1, 2, 2, 2, 2]); // 2
+```
+
+---
+Какие из этих вызовов функций отработают правильно, а какие покажут ошибку?
+```typescript
+type User = {
+  name: string;
+};
+
+type Animal = {
+  name: string;
+  age: number;
+};
+
+type Car = {
+  name?: string;
+  engine: string;
+};
+
+const logUser = (user: User) => {
+  console.log(user);
+};
+
+const maxim: User = { name: 'maxim' };
+const john: Animal = { name: 'john', age: 10 };
+const anton = { name: 'anton' };
+
+const astonMartin: Car = { engine: 'AM-12' };
+const mcLaren = { name: 'senna', engine: 'M-3' };
+
+// Какие из этих вызовов функций будут работать, а какие нет?
+// logUser(maxim);
+// logUser(john);
+// logUser(anton);
+// logUser(astonMartin);
+// logUser(mcLaren);
+// logUser({ name: 'just object' });
+
 ```
 
 ---
