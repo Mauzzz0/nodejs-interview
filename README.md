@@ -1,17 +1,10 @@
 ### Содержание
 1. [Git](#Git)
 2. [Node.JS](#NodeJS)
-   * [Теория [Node.JS]](#Теория [NodeJS])
-   * [Практика [Node.JS]](#Практика [NodeJS])
 3. [JavaScript](#JavaScript)
-   * [Теория [JavaScript]](#Теория [JavaScript])
-   * [Практика [JavaScript]](#Практика [JavaScript])
 4. [TypeScript](#TypeScript)
-   * [Теория [TypeScript]](#Теория [TypeScript])
-   * [Практика [TypeScript]](#Практика [TypeScript])
-   * [Nest.JS](#NestJS)
-   * [Базы данных](#Базы данных)
-   * [PostgreSQL](#PostgreSQL)
+5. [Nest.JS](#NestJS)
+6. [PostgreSQL](#PostgreSQL)
 
 
 ---
@@ -164,7 +157,7 @@ console.log(startup);
 * Какие значения дадут **false** при конвертации в **Boolean**?
 * Какие ссылочные типы данных вы знаете?
 * Как сравнить ссылочные типы данных?
-* Что такое колбеки?
+* Что такое колбеки? Актуальны ли они?
 * Как использовать **reduce**?
 * В чем разница цикла **.map** и **.forEach**?
 * В чем разница циклов **.find**, **.filter**, **.map**, **.reduce**?
@@ -172,6 +165,7 @@ console.log(startup);
 * Что такое **Promise**? На смену чему они пришли?
 * Можно ли самому создать **Promise**?
 * Какие статусы есть у **Promise**?
+* В чём отличие методов **Promise.all**, **Promise.allSettled** и **Promise.race**?
 * Какие методы для отложенного выполнения кода знаете? (4 штуки) В чем их отличие?
 * Что такое контекст **this**, в каких случаях его можно потерять?
 * Зачем нужны и в чем отличие **bind, call, apply**?
