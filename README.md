@@ -260,6 +260,21 @@ const result = [1, 1, 2, 3, 5, 5, 9, 10, 11, 12, 13];
 ```
 
 ---
+Напишите функции для нахождения TLD (top level domain) для переданной в функцию ссылки.
+Решение должно содержать минимум 2 реализации.
+```typescript
+// ru
+const sampleUri1 = 'https://username:password@www.example.ru:888/path.to/something?a=b&c=d.e.f.g';
+
+// com
+const sampleUri2 = 'https://www.example.com/path.to/something?a=b&c=d.e.f.g';
+
+// localhost
+const sampleUri3 = 'https://localhost/path.to/something?a=b&c=d.e.f.g';
+```
+
+
+---
 
 # Nest.JS
 * Что такое Nest.JS?
@@ -290,7 +305,7 @@ const result = [1, 1, 2, 3, 5, 5, 9, 10, 11, 12, 13];
   * M-to-1
   * M-to-M
   * С помощью чего реализовывается связь M-to-M?
-* Что такое индексы в PostgreSQL? Какие виды индексов вы знаете?
+* Что такое индексы в PostgreSQL? Какие виды индексов вы знаете?
 * Что делает explain в PosgreSQL?
 * Что такое ORM? Приведите примеры ORM.
 * Какие виды операций существуют в SQL? (select, insert, update, delete)
@@ -323,7 +338,7 @@ const result = [1, 1, 2, 3, 5, 5, 9, 10, 11, 12, 13];
 
 Создайте и наполните таблицы
 ```sql
-create table authors (
+кcreate table authors (
   id int,
   name varchar(255)
 );
