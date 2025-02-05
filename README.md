@@ -338,7 +338,7 @@ const sampleUri3 = 'https://localhost/path.to/something?a=b&c=d.e.f.g';
 
 Создайте и наполните таблицы
 ```sql
-кcreate table authors (
+create table authors (
   id int,
   name varchar(255)
 );
