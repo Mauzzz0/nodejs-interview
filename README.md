@@ -8,6 +8,10 @@
 7. [PostgreSQL](#PostgreSQL)
 
 ---
+# Лайвкодинг
+Все задания на лайвкодинг лежат в отдельном файле - [livecoding.md](./livecoding.md)
+
+---
 # Computer Science
 Общий список ситуативных вопросов по теме **Computer Science**.  
 Вполне нормально, что кандидат может не знать часть.
@@ -283,24 +287,6 @@ console.log(i);
 ---
 
 ## Практика [TypeScript]
-Напишите рекурсивную функцию, которая пишет слово наоборот
-```typescript
-const word = 'code';
-
-// Результат: edoc
-const result = reverse(word);
-```
-
----
-Напишите функцию, которая находит второе наибольшее число в массиве
-```typescript
-const values = [1, -1, 0, 2, -2, 3, -3, 4, -4, 5, -5];
-
-const secondMaxValue = find2ndMaxValue(values); // 4
-
-find2ndMaxValue([0, 1, 1, 1, 2, 2, 2, 2]); // 2
-```
-
 ---
 Какие из этих вызовов функций отработают правильно, а какие покажут ошибку?
 ```typescript
@@ -338,33 +324,6 @@ const mcLaren = { name: 'senna', engine: 'M-3' };
 // logUser({ name: 'just object' });
 
 ```
-
----
-
-У вас есть два отсортированных массива. Объедините их в один отсортированный массив за один проход.  
-То есть не в две операции "объединить" а потом отдельно "отсортировать".
-```typescript
-const arr1 = [1, 5, 10];
-const arr2 = [1, 2, 3, 5, 9, 11, 12, 13];
-
-// Результат:
-const result = [1, 1, 2, 3, 5, 5, 9, 10, 11, 12, 13];
-```
-
----
-Напишите функции для нахождения TLD (top level domain) для переданной в функцию ссылки.
-Решение должно содержать минимум 2 реализации.
-```typescript
-// ru
-const sampleUri1 = 'https://username:password@www.example.ru:888/path.to/something?a=b&c=d.e.f.g';
-
-// com
-const sampleUri2 = 'https://www.example.com/path.to/something?a=b&c=d.e.f.g';
-
-// localhost
-const sampleUri3 = 'https://localhost/path.to/something?a=b&c=d.e.f.g';
-```
-
 
 ---
 

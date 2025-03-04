@@ -5,7 +5,7 @@ const createAnchorLink = (ref: string) => {
 };
 
 const main = () => {
-  const readmeContent = readFileSync('../README.md', 'utf8');
+  const readmeContent = readFileSync('../livecoding.md', 'utf8');
 
   const headingRegex = /(#{1,6})\s+(.*)/gm;
   const headings: { level: number; text: string }[] = [];
@@ -13,7 +13,7 @@ const main = () => {
 
   while ((match = headingRegex.exec(readmeContent)) !== null) {
     const level = match[1].length;
-    const text = match[2].trim();
+    const text = match[2].trim().replace(/\s+/g, '-');
 
     headings.push({ level, text });
   }
