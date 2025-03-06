@@ -340,6 +340,7 @@ const mcLaren = { name: 'senna', engine: 'M-3' };
 * Зачем нужны и как создать **Guard**, **middleware**, Exception Filter ?
 * Что такое паттерн **DTO**? Как их можно валидировать с помощью **class-validator** и **class-transformer**?
 * Что такое переменные окружения? Как их можно прочитать в **Nest.JS**?
+* Что такое **ShutdownHooks**? Зачем они нужны? Что такое **Graceful Shutdown**?
 
 ---
 
