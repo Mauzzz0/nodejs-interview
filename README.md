@@ -82,6 +82,9 @@
 ## Практика [Node.JS]
 
 Что выведет код?
+<details>
+<summary>Код</summary>
+
 ```javascript
 setTimeout(function timeout() {
     console.log('Таймаут');
@@ -98,8 +101,15 @@ p.then(function(){
 
 console.log('Конец скрипта');
 ```
+</details>
+
+
 ---
 Что выведет код?
+
+<details>
+<summary>Код</summary>
+
 ```javascript
 console.log(1);
 
@@ -115,6 +125,8 @@ setTimeout(() => console.log(6));
 
 console.log(7);
 ```
+</details>
+
 ---
 Почему добавление 4-го параллельного хеширования никак не изменило время работы программы, а добавление
 5-го увеличило время работы программы в 2 раза?  
