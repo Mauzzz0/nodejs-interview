@@ -336,7 +336,7 @@ const mcLaren = { name: 'senna', engine: 'M-3' };
 * Какая актуальная версия **Nest.JS**?
 * Что такое Swagger? Как он настраивается в **Nest.JS**?
 * Что такое Pipes?
-* Где в **Nest.JS**
+* Где в **Nest.JS** используется паттерн **Singletone**?
 * Зачем нужны и как создать **Guard**, **middleware**, Exception Filter ?
 * Что такое паттерн **DTO**? Как их можно валидировать с помощью **class-validator** и **class-transformer**?
 * Что такое переменные окружения? Как их можно прочитать в **Nest.JS**?
