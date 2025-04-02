@@ -37,8 +37,8 @@
 Напишите функцию, которая удаляет повторения символов из строки, сохраняя порядок.  
 Для решения используйте `reduce`.
 ```typescript
-const result = deduplicate('bookkeeper');
-console.log(result); // bokeper
+const result = deduplicate('bookkeeperrroopp');
+console.log(result); // bokeperop
 ```
 
 ---
