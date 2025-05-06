@@ -360,7 +360,7 @@ const john: Animal = { name: 'john', age: 10 };
 const anton = { name: 'anton' };
 
 const astonMartin: Car = { engine: 'AM-12' };
-const mcLaren = { name: 'senna', engine: 'M-3' };
+const mcLaren: Car = { name: 'senna', engine: 'M-3' };
 
 // Какие из этих вызовов функций будут работать, а какие нет?
 // logUser(maxim);
