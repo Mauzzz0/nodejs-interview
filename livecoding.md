@@ -233,9 +233,9 @@ console.log(stack.take()); // 1
 * cab
 * cba
 ```typescript
-console.log('example', 'pml'); // true, ищем 'pml' и находим 'mpl' 
-console.log('server', 'revers'); // true, ищем 'revers' и находим 'server' 
-console.log('automati', 'amtto'); // true, ищем 'amtto' и находим 'tomat' 
+console.log(includes('example', 'pml')); // true, ищем 'pml' и находим 'mpl' 
+console.log(includes('server', 'revers')); // true, ищем 'revers' и находим 'server' 
+console.log(includes('automati', 'amtto')); // true, ищем 'amtto' и находим 'tomat' 
 ```
 
 ---
